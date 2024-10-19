@@ -21,6 +21,12 @@
       "~/*": ["./src/*"]
     }
   },
+  "noImplicitAny": true,
+  "noImplicitThis": true,
+  "strictNullChecks": true,
+  "noFallthroughCasesInSwitch": true,
+  "useUnknownInCatchVariables": false,
+  "allowSyntheticDefaultImports": true,
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }
