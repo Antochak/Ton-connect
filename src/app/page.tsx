@@ -1,3 +1,8 @@
 export default function Home() {
-  return <div> page </div>;
+  return (
+    <div>
+      <h1>TON Connect App</h1>
+      {/* <TonConnectButton /> */}
+    </div>
+  );
 }

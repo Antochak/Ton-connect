@@ -2,10 +2,7 @@
   "name": "Ton connect example",
   "short_name": "Ton app",
   "description": "Simple example using ton connect",
-  "url": "https://antochak.github.io/Ton-connect/",
-  "display": "standalone",
-  "background_color": "#fff",
-  "theme_color": "#fff",
+  "start_url": "https://antochak.github.io/Ton-connect/",
   "icons": [
     {
       "src": "/favicon.ico",
