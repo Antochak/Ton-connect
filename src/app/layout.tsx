@@ -1,5 +1,3 @@
-import {TonConnectUI} from '@tonconnect/ui';
-import {TonConnectUIProvider} from '@tonconnect/ui-react';
 import type {Metadata} from 'next';
 import localFont from 'next/font/local';
 import './globals.css';
@@ -28,14 +26,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const {getWallets} = TonConnectUI;
-  console.log(getWallets);
-
   return (
     <html lang='en'>
       <body>
-        <TonConnectUIProvider manifestUrl={manifestUrl}>{children}</TonConnectUIProvider>
-        {/* {children} */}
+        {/* <TonConnectUIProvider manifestUrl={manifestUrl}>{children}</TonConnectUIProvider> */}
+        {children}
       </body>
     </html>
   );
