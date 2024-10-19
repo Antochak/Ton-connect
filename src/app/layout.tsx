@@ -14,7 +14,7 @@ const geistMono = localFont({
   weight: '100 900',
 });
 
-const manifestUrl = 'https://antochak.github.io/Ton-connect/public/manifest.json';
+const manifestUrl = 'https://antochak.github.io/Ton-connect/public/tonconnect-manifest.json';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -30,8 +30,8 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body>
-        {/* <TonConnectUIProvider manifestUrl={manifestUrl}>{children}</TonConnectUIProvider> */}
-        {children}
+        <TonConnectUIProvider manifestUrl={manifestUrl}>{children}</TonConnectUIProvider>
+        {/* {children} */}
       </body>
     </html>
   );
