@@ -13,7 +13,7 @@ const geistMono = localFont({
   weight: '100 900',
 });
 
-const manifestUrl = '/api/proxy';
+const manifestUrl = 'https://antochak.github.io/Ton-connect/public/tonconnect-manifest.json';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
