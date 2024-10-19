@@ -28,10 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body>
-        {/* <TonConnectUIProvider manifestUrl={manifestUrl}>{children}</TonConnectUIProvider> */}
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
