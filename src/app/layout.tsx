@@ -1,3 +1,4 @@
+import {TonConnectUI} from '@tonconnect/ui';
 import {TonConnectUIProvider} from '@tonconnect/ui-react';
 import type {Metadata} from 'next';
 import localFont from 'next/font/local';
@@ -14,7 +15,7 @@ const geistMono = localFont({
   weight: '100 900',
 });
 
-const manifestUrl = 'https://antochak.github.io/Ton-connect/public/tonconnect-manifest.json';
+const manifestUrl = '/api/proxy';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -27,6 +28,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const {getWallets} = TonConnectUI;
+  console.log(getWallets);
+
   return (
     <html lang='en'>
       <body>
