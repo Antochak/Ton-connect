@@ -1,3 +1,4 @@
+import {useTonConnectModal} from '@tonconnect/ui-react';
 import {useBalance} from '~/hook';
 import {Header} from '~/shared';
 import styles from './styles.module.scss';
@@ -8,6 +9,7 @@ type Props = {
 
 export const HomeView = ({onTransactionRedirect}: Props) => {
   const {address, balance, isLoading} = useBalance();
+  const {open} = useTonConnectModal();
 
   return (
     <div>
@@ -20,7 +22,7 @@ export const HomeView = ({onTransactionRedirect}: Props) => {
       </Header>
       <div className={styles.wrapper}>
         <p className={styles.address}>Address: {address}</p>
-        <button className={styles.button} onClick={onTransactionRedirect}>
+        <button className={styles.button} onClick={balance ? onTransactionRedirect : open}>
           Send transaction
         </button>
       </div>
