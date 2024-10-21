@@ -2,7 +2,7 @@ import {THEME, TonConnectUIProvider} from '@tonconnect/ui-react';
 import {AppProps} from 'next/app';
 import Head from 'next/head';
 import {manifestUrl, META} from '~/meta';
-import '../styles/index.css';
+import '../shared/styles/index.css';
 
 interface MyAppProps extends AppProps {
   Component: AppProps['Component'];

@@ -1,17 +1,18 @@
 import {TonConnectButton, useTonWallet} from '@tonconnect/ui-react';
 import styles from './styles.module.scss';
+import type {ReactNode} from 'react';
 
 type Props = {
-  balance: number | null;
+  children: ReactNode;
 };
 
-export const Header = ({balance}: Props) => {
+export const Header = ({children}: Props) => {
   const wallet = useTonWallet();
 
   return (
     <header className={styles.main}>
       <div className={styles.container}>
-        <p className={styles.text}>{wallet ? `Balance: ${balance} TON` : 'Welcome'}</p>
+        {children}
         <TonConnectButton />
       </div>
     </header>
