@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TON Connect Wallet Application
 
-## Getting Started
+This application allows users to connect their wallets and send transactions on the TON network.
 
-First, run the development server:
+## Application Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Wallet connection (e.g., Tonkeeper) via TonConnect.
+- Sending transactions on the TON Testnet.
+- Displaying and retrieving the TON balance.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation and Setup
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prerequisites:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Node.js version 16 or higher
+- Yarn (https://yarnpkg.com/)
 
-## Learn More
+### Steps to deploy locally:
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository:
+   ```bash
+   git clone <repo-url>
+   cd <repo-name>
+   yarn
+   yarn dev
+The application will be available at: http://localhost:3000
+Environment variables (if applicable):
+If your application uses environment variables (e.g., for connecting to the TON Testnet), add a .env.local file with the required settings.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Connecting and Funding the Wallet
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Getting Testnet TON tokens
+You will need test tokens to use on the TON Testnet for testing.
 
-## Deploy on Vercel
+Steps to obtain Testnet TON:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Go to https://faucet.tonfura.com.
+Enter your Testnet wallet address, which you will receive after connecting your wallet through the application.
+Click the Submit button.
+You will receive 1 Testnet TON that can be used for testing transactions. This process can be repeated every 12 hours.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. Funding your wallet
+Open the application and connect your wallet (e.g., Tonkeeper).
+Copy your Testnet address.
+Go to TON Fura Faucet and paste your address.
+Click Submit, and your wallet will be funded with Testnet TON tokens.
