@@ -10,6 +10,7 @@ type Props = {
 export const HomeView = ({onTransactionRedirect}: Props) => {
   const {address, balance, isLoading} = useBalance();
   const {open} = useTonConnectModal();
+  const roundedBalance = +(Math.round(Number((balance || 0) + 'e+2')) + 'e-2');
 
   return (
     <div>
@@ -17,7 +18,7 @@ export const HomeView = ({onTransactionRedirect}: Props) => {
         {isLoading ? (
           <p>...Loading</p>
         ) : (
-          <p className={styles.text}>{balance ? `Balance: ${balance} TON` : 'Welcome'}</p>
+          <p className={styles.text}>{balance ? `Balance: ${roundedBalance} TON` : 'Welcome'}</p>
         )}
       </Header>
       <div className={styles.wrapper}>
