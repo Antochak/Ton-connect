@@ -1,0 +1,1 @@
+export {fetchTonBalance} from './fetcher';

@@ -12,9 +12,12 @@
   },
   "dependencies": {
     "@tonconnect/ui-react": "^2.0.9",
+    "axios": "^1.6.3",
     "next": "14.2.15",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "sass": "^1.63.6",
+    "scss": "^0.2.4"
   },
   "devDependencies": {
     "@types/node": "^20",
